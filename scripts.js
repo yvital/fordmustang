@@ -199,7 +199,7 @@ group2.add( new THREE.Mesh( geometry, meshMaterial2 ) );
 var options = chooseFromHash( group2 );
 
 var color_set2 = {
-      color_text2: 0x319177
+      color_text2: 0x148768
 };
 
 var folder2 = gui.addFolder( 'Text color 2 :' );
