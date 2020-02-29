@@ -90,7 +90,7 @@ var guis = {
 
                   var loader = new THREE.FontLoader();
 
-                  loader.load( 'https://github.com/yvital/fordmustang/blob/master/fonts/helvetiker_regular.typeface.json', function ( font ) {
+                  loader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
                   // loader.load( 'fonts/optimer_regular.typeface.json', function ( font ) {
 
 
@@ -224,15 +224,15 @@ scene.background = new THREE.Color( 'white' );
 var mtlLoader = new THREE.MTLLoader();
 
 
-mtlLoader.setResourcePath('https://github.com/yvital/fordmustang/blob/master/assets/shelby-ford-mustang/');
-mtlLoader.setPath('https://github.com/yvital/fordmustang/blob/master/assets/shelby-ford-mustang/');
+mtlLoader.setResourcePath('assets/shelby-ford-mustang/');
+mtlLoader.setPath('assets/shelby-ford-mustang/');
 mtlLoader.load('shelby-ford-mustang.mtl', function (materials) {
 
     materials.preload();
 
     var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials(materials);
-    objLoader.setPath('https://github.com/yvital/fordmustang/blob/master/assets/shelby-ford-mustang/');
+    objLoader.setPath('assets/shelby-ford-mustang/');
     objLoader.load('shelby-ford-mustang.obj', function (object) {
 
         scene.add(object);
